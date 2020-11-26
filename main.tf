@@ -118,6 +118,7 @@ resource aws_lambda_function _ {
   environment {
     variables = {
       GITHUB_TOKEN = var.github_token
+      ORIGIN       = var.origin
     }
   }
 
