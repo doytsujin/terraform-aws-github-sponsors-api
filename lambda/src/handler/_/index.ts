@@ -38,7 +38,7 @@ export const handler = middy(dispatch)
   .use(useErrorHandler())
   .use(useCors({
     headers: "Content-Type",
-    origins: [process.env.ORIGIN!, "http://localhost"]
+    origins: process.env.ORIGIN!.split(",")
   }))
   .use(useResponseSerializer({
     default: "application/json",
