@@ -1,4 +1,4 @@
-# Terraform GitHub Sponsors API
+# Terraform AWS GitHub Sponsors API
 
 A Terraform module to deploy an AWS API Gateway + AWS Lambda powered API to
 retrieve the sponsors for a specific GitHub account in JSON format, in order to
@@ -6,14 +6,14 @@ render something like this (click on the link to see it in action):
 
   [![Screenshot][1]][2]
 
-  [1]: .github/assets/screenshot.png
+  [1]: https://github.com/squidfunk/terraform-aws-github-sponsors-api/raw/master/.github/assets/screenshot.png
   [2]: https://squidfunk.github.io/mkdocs-material/insiders/#how-sponsorship-works
 
 ## Usage
 
 ``` hcl
 module "sponsors" {
-  source = "github.com/squidfunk/terraform-github-sponsors-api"
+  source = "github.com/squidfunk/terraform-aws-github-sponsors-api"
   prefix = "<prefix>"
   region = "<region>"
 
@@ -26,7 +26,7 @@ This will create a regional AWS API Gateway REST API which will query GitHub's
 GraphQL API for sponsorships, and return them as JSON. See the [TypeScript
 typings][3] to learn about the returned format.
 
-  [3]: https://github.com/squidfunk/terraform-github-sponsors-api/blob/master/lambda/src/sponsors/index.ts
+  [3]: https://github.com/squidfunk/terraform-aws-github-sponsors-api/blob/master/lambda/src/sponsors/index.ts
 
 ## Configuration
 

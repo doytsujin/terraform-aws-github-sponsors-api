@@ -1,10 +1,10 @@
 {
-  "name": "terraform-github-sponsors-api",
+  "name": "terraform-aws-github-sponsors-api",
   "version": "0.0.0",
   "description": "Fetch a listing of your GitHub Sponsors",
-  "homepage": "https://github.com/squidfunk/terraform-github-sponsors-api",
+  "homepage": "https://github.com/squidfunk/terraform-aws-github-sponsors-api",
   "bugs": {
-    "url": "https://github.com/squidfunk/terraform-github-sponsors-api/issues",
+    "url": "https://github.com/squidfunk/terraform-aws-github-sponsors-api/issues",
     "email": "martin.donath@squidfunk.com"
   },
   "license": "MIT",
@@ -16,7 +16,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squidfunk/terraform-github-sponsors-api.git"
+    "url": "https://github.com/squidfunk/terraform-aws-github-sponsors-api.git"
   },
   "main": "dist",
   "scripts": {
