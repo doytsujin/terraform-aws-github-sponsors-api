@@ -1,0 +1,9 @@
+{
+  "search.exclude": {
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/tmp": true
+  },
+  "typescript.tsdk": "lambda/node_modules/typescript/lib"
+}

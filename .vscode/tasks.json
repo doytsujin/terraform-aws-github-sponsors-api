@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build for debugging",
+      "type": "shell",
+      "command": "npm run build",
+      "options": {
+        "cwd": "lambda"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": [
+        "$tsc"
+      ]
+    }
+  ]
+}

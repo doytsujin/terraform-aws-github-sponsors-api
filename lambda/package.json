@@ -1,0 +1,47 @@
+{
+  "name": "terraform-github-sponsors-api",
+  "version": "0.0.0",
+  "description": "Fetch a listing of your GitHub Sponsors",
+  "homepage": "https://github.com/squidfunk/terraform-github-sponsors-api",
+  "bugs": {
+    "url": "https://github.com/squidfunk/terraform-github-sponsors-api/issues",
+    "email": "martin.donath@squidfunk.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Martin Donath",
+    "email": "martin.donath@squidfunk.com"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/squidfunk/terraform-github-sponsors-api.git"
+  },
+  "main": "dist",
+  "scripts": {
+    "build": "npx rollup -c rollup.config.ts",
+    "clean": "npx rimraf dist"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "debug": "^4.3.1",
+    "supports-color": "^8.0.0"
+  },
+  "devDependencies": {
+    "@middy/core": "^1.4.0",
+    "@middy/http-error-handler": "^1.4.0",
+    "@middy/http-cors": "^1.4.0",
+    "@middy/http-response-serializer": "^1.4.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.1.0",
+    "@types/aws-lambda": "^8.10.64",
+    "@types/node": "^14.14.9",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.2"
+  }
+}
