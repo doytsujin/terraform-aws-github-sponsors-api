@@ -41,10 +41,6 @@ data template_file api_schema {
   template = file("${path.module}/schema/openapi.yml")
 
   vars = {
-    allow_headers = "Content-Type,X-Amz-Date"
-    allow_methods = "GET"
-    allow_origin  = var.origin
-
     api_name            = var.prefix
     api_integration_uri = "arn:aws:apigateway:${
       var.region
