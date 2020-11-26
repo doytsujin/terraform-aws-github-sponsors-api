@@ -29,6 +29,7 @@
     "supports-color": "^8.0.0"
   },
   "devDependencies": {
+    "@middy/cache": "^1.4.0",
     "@middy/core": "^1.4.0",
     "@middy/http-error-handler": "^1.4.0",
     "@middy/http-cors": "^1.4.0",

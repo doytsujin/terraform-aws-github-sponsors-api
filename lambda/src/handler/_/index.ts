@@ -20,6 +20,7 @@
  * IN THE SOFTWARE.
  */
 
+import useCache from "@middy/cache"
 import middy from "@middy/core"
 import useCors from "@middy/http-cors"
 import useErrorHandler from "@middy/http-error-handler"
@@ -36,6 +37,9 @@ import { dispatch } from "../dispatch"
  */
 export const handler = middy(dispatch)
   .use(useErrorHandler())
+  .use(useCache({
+    calculateCacheId: async event => event.httpMethod
+  }))
   .use(useCors({
     headers: "Content-Type",
     origins: process.env.ORIGIN!.split(",")
